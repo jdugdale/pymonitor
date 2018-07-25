@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-.vscode
-=======
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -105,4 +102,5 @@ venv.bak/
 
 # mypy
 .mypy_cache/
->>>>>>> 77bbf9bc9d2603f61db721bb551ce59a8e440fd3
+
+.vscode/
