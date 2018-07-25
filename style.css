@@ -1,0 +1,13 @@
+GtkWindow {
+    background-color: #00FF00;
+}
+
+GtkEntry.invalid {
+    background-color: #ffaaaa;
+    background: #ffaaaa;
+}
+
+GtkButton#ok-button {
+    background-color: green;
+    background: green;
+}
