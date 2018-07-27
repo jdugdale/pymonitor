@@ -3,16 +3,27 @@
 <interface>
   <requires lib="gtk+" version="3.12"/>
   <object class="GtkApplicationWindow" id="window1">
+    <property name="width_request">-1</property>
+    <property name="height_request">-1</property>
     <property name="can_focus">False</property>
+    <property name="hexpand">True</property>
+    <property name="vexpand">True</property>
+    <property name="resizable">False</property>
+    <property name="default_width">-1</property>
+    <property name="default_height">-1</property>
+    <property name="hide_titlebar_when_maximized">True</property>
+    <property name="decorated">False</property>
+    <property name="show_menubar">False</property>
     <signal name="destroy" handler="onDestroy" swapped="no"/>
     <child>
       <object class="GtkGrid" id="grid1">
         <property name="visible">True</property>
         <property name="can_focus">False</property>
         <child>
-          <object class="GtkLabel" id="label1">
+          <object class="GtkLabel" id="lblNext">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
+            <property name="valign">center</property>
             <property name="hexpand">True</property>
             <property name="vexpand">True</property>
             <property name="label" translatable="yes">Main top dawg</property>
@@ -25,30 +36,22 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton" id="button1">
-            <property name="label" translatable="yes">Click me</property>
+          <object class="GtkLabel" id="lblTime">
+            <property name="name">lblTime</property>
             <property name="visible">True</property>
-            <property name="can_focus">True</property>
-            <property name="receives_default">True</property>
-            <property name="relief">none</property>
-            <signal name="clicked" handler="onButtonPressed" swapped="no"/>
+            <property name="can_focus">False</property>
+            <property name="valign">start</property>
+            <property name="margin_top">20</property>
+            <property name="hexpand">True</property>
+            <property name="vexpand">True</property>
+            <property name="label" translatable="yes">Main top dawg</property>
+            <property name="justify">fill</property>
           </object>
           <packing>
-            <property name="left_attach">1</property>
+            <property name="left_attach">0</property>
             <property name="top_attach">1</property>
+            <property name="width">3</property>
           </packing>
-        </child>
-        <child>
-          <placeholder/>
-        </child>
-        <child>
-          <placeholder/>
-        </child>
-        <child>
-          <placeholder/>
-        </child>
-        <child>
-          <placeholder/>
         </child>
         <child>
           <placeholder/>

@@ -1,1 +1,2 @@
 Bus|MTWRF|1900
+Hotel|SN|0930

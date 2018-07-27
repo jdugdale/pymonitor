@@ -1,5 +1,11 @@
 GtkWindow {
-    background-color: #00FF00;
+    background-color: black;
+    color: white;
+    font-size: 500%;
+}
+
+GtkLabel#lblTime {
+    font-size: 200%;
 }
 
 GtkEntry.invalid {
